@@ -1,0 +1,150 @@
+.wellness {
+  padding: 96px 0;
+  background: var(--forest);
+  color: var(--sage-light);
+  overflow: hidden;
+}
+
+.wellness__inner {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+  gap: 64px;
+}
+
+.wellness__visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 360px;
+}
+
+.wellness__circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(184, 149, 106, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.wellness__circle-icon {
+  font-size: 4rem;
+  opacity: 0.6;
+}
+
+.wellness__ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(184, 149, 106, 0.15);
+}
+
+.wellness__ring--1 {
+  width: 280px;
+  height: 280px;
+}
+
+.wellness__ring--2 {
+  width: 360px;
+  height: 360px;
+  border-color: rgba(184, 149, 106, 0.08);
+}
+
+.wellness__eyebrow {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 16px;
+}
+
+.wellness__title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  color: var(--ivory);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.wellness__intro {
+  font-size: 1rem;
+  line-height: 1.75;
+  font-weight: 300;
+  color: var(--sage-light);
+  margin-bottom: 36px;
+  max-width: 520px;
+}
+
+.wellness__pillars {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+.wellness__pillar-title {
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 6px;
+}
+
+.wellness__pillar-text {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  font-weight: 300;
+  color: var(--sage-muted);
+}
+
+.wellness .btn--secondary {
+  color: var(--ivory);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.wellness .btn--secondary:hover {
+  background: var(--ivory);
+  color: var(--forest);
+  border-color: var(--ivory);
+}
+
+@media (max-width: 960px) {
+  .wellness {
+    padding: 72px 0;
+  }
+
+  .wellness__inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .wellness__visual {
+    min-height: 260px;
+  }
+}
+
+@media (max-width: 640px) {
+  .wellness__circle {
+    width: 160px;
+    height: 160px;
+  }
+
+  .wellness__ring--1 {
+    width: 220px;
+    height: 220px;
+  }
+
+  .wellness__ring--2 {
+    width: 280px;
+    height: 280px;
+  }
+}

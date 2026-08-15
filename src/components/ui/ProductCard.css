@@ -1,0 +1,128 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-card__image {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.product-card__badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 4px 12px;
+  font-family: var(--font-heading);
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--forest);
+  background: var(--ivory);
+  border-radius: var(--radius);
+}
+
+.product-card__wishlist {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(250, 247, 242, 0.85);
+  border: none;
+  border-radius: 50%;
+  font-size: 1rem;
+  color: var(--forest);
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.product-card__wishlist:hover {
+  background: var(--ivory);
+  color: var(--gold);
+}
+
+.product-card__botanical {
+  font-size: 3rem;
+  opacity: 0.3;
+  padding-bottom: 24px;
+}
+
+.product-card__info {
+  margin-bottom: 12px;
+}
+
+.product-card__category {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 6px;
+}
+
+.product-card__name {
+  font-family: var(--font-heading);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--forest);
+  margin-bottom: 8px;
+  letter-spacing: 0.02em;
+}
+
+.product-card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-card__price {
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.product-card__rating {
+  font-size: 0.8125rem;
+  color: var(--gold);
+}
+
+.product-card__add {
+  width: 100%;
+  padding: 12px;
+  font-family: var(--font-heading);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--forest);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s, border-color 0.25s;
+}
+
+.product-card__add:hover {
+  background: var(--forest);
+  color: var(--ivory);
+  border-color: var(--forest);
+}
